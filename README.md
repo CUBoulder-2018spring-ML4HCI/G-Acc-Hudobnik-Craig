@@ -19,7 +19,7 @@ Accessibility and Myo Band Drawing using ML
 * Myo Connecter
 * Myo Mapper
 * Processing
-* java
+* Java
 
 ### Feature Extractor
 
