@@ -5,7 +5,7 @@ Accessibility and Myo Band Drawing using ML
 
 # Design Statement
 
-Accessibility and Myo Band Drawing using ML
+Ability for a person with limited hand movement and usability to be able to use a mouse on a computer or train it to be used in any application. In our case, a drawing program. 
 
 ## Members
 
@@ -27,7 +27,7 @@ To get started you will need to download [Myo Connect](https://www.myo.com/start
 
 After you have a custom profile you should download [Myo Mapper](http://www.wekinator.org/examples/#Myo_Armband_EMGmuscle_sensing_and_movement). This allows you to extract features that you want to send to Wekinator. There was an issue with at least the Mac version when trying to send hand pose. We made a fix and the source code is found [here](https://github.com/Oasis14/MyoMapper). If you want the compiled version just contact Ryan.
 
-With your Myo band connected open up MyoMapper. In the feature selection **** Add specific *** and Hand Pose to ML. Once the *** Feature Display?? *** shows up reset the origin to a comfortable position. After you click start data will send to Wekinator. For the input change the message to /myo1 and inputs to 4. For our puts we created 3 regression outputs and 1 classification.
+With your Myo band connected open up MyoMapper. In the feature selector, check Scaled and Hand Pose to ML. Once the the options are selected, close out of the features window and click on start. When the calibration and scaling screen shows up reset the origin to a comfortable position. After you click start data will send to Wekinator. For the input change the message to /myo1 and inputs to 4. For our puts we created 3 regression outputs and 1 classification.
 
 After Wekinator is set up start the paint program. The program excepts 3 regressions and 1 classifications. The first two regressions control the x and y position of the brush. The last regression is for the brush width. The classification is the color of the paint.  
 
@@ -44,7 +44,7 @@ Using MyoMapper the yaw, pitch and roll are scaled to send a value between 0 and
 Ideas to improve would be:
 * Custom Gestures
 * Multiple Myo Bands for control
-* Have it work on calf or forearm 
+* Have it work on calf or forearm
 
 ### Demo video
 
